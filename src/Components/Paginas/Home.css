@@ -1,0 +1,112 @@
+:root {
+    --blanco: #ffffff;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --oscuro: #212121;
+  }
+  body {
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    min-height: 100%;   
+  }
+  h1, h2, h3, h4, h5, p {
+    text-align: center;
+    text-align: justify;
+  }
+  .img1{
+    max-width: 95%;
+    max-height: 95%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+  }
+  .logo {
+    max-width: 10%;
+    max-height: 10%;
+  }
+  .row{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .sombra {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+  }
+
+  .servicios {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+  @media (min-width:768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        column-gap: 1rem;
+    }
+  }
+  .servicio {
+    text-align:center;
+  }
+  .servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .iconos {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primario);
+    border-radius: 50%;
+  }
+  .iconos i {
+    font-size: 2rem;
+    color: var(--oscuro);
+  }
+
+  .boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border:none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+input[type=date] {
+  height: 35px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: lighten(#2f2f2f,40%);
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 3px;
+  color: var(--oscuro);
+}
